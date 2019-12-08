@@ -30,3 +30,8 @@ for d in data:
     if 'good' in d:
         good.append(d)
 print(len(good))
+#快写法
+good=[d+'123' for d in data if 'good'in d]
+bad=['bad'in d for d in data]
+print(len(good))
+print(bad)
